@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+               background-color: lightgoldenrodyellow; 
+               margin-top: 0%;
+               margin-right: 0%;
+               margin-left: 0%;
+               margin-bottom: 0%;
+            }
+            div{
+                height: 38px;
+                width: 100%;
+                background-color:maroon;
+                padding: 0%;
+            }
+        </style>
+        <title>Request For New PAN Card Or/And Changes Or Correction in PAN Data</title>
+    </head>
+
+    <body>
+        <div>
+            <table style="width:100%; height:0%; padding-bottom:0px">
+                <th style="color:white;text-align:center; font-family:Arial Narrow;font-size:15px; padding-bottom:0px;">Request For New PAN Card Or/And Changes Or Correction in PAN Data</th>
+            </table>
+            <table style="width:100%; margin-bottom: 0%; padding-bottom:0px; padding-top:0px">
+                <th style="color:white;text-align:center; font-family:Arial Narrow; font-size:13px; padding-top:0px">
+                    <i style="text-align:center;padding-top:0px;">
+                        Fields marked with 
+                        <i style="color: orangered;border-collapse:collapse;">*</i> 
+                        (asterisk) are mandatory.  To avoid mistake(s), please refer
+                        <a style="color:rgb(255, 153, 51);" href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html"> guidelines</a>
+                        and 
+                        <a style="color:rgb(255, 153, 51);"  href="https://tin.tin.nsdl.com/pan/InstructionsCorr.html">instructions</a>
+                    </i>
+                </th>
+            </table>   
+        </div>
+
+        <form>
+            <table style="margin-top:0%;  margin-left:0%; border-collapse:collapse; margin-bottom:0%">
+                <!-- Citizenship -->
+                <tr style="border-collapse:collapse">
+                    <td style="border: 1px solid rgb(115, 115, 115); height:15px; border-collapse:collapse; column-width: 0px;" ></td>
+                    <td style="border: 1px solid rgb(115, 115, 115); height: 15px; border-collapse:collapse; width:1270px; font-family:Arial; font-size:13px;  padding-left:0%;">
+                        <strong style="color:orangered">* </strong>
+                        <strong>Whether citizen of India</strong>
+                        <label for="Citizenship-Yes" style="font-family:Arial; font-size:13px; margin-left:60px;">Yes</label>
+                        <input id="Citizenship-Yes" type="radio" name="Citizenship" value="Indian" required>
+                        <label for="Citizenship-No" style="font-family:Arial; font-size:13px; margin-left:15px">No</label>
+                        <input id="Citizenship-No" type="radio" name="Citizenship" value="Non-Indian" required>
+                    </td>
+                </tr>
+                <!-- PAN Number -->
+                <tr style="border-collapse:collapse">
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:1250px; font-family:Arial; font-size:13px; padding:0%;">
+                        <label for="PAN-Number">
+                            <strong style="color:orangered">* </strong>
+                            <strong>Permanent Account Number (PAN)</strong>
+                        </label>
+                        <input style="margin-bottom:1px;" id="PAN-Number" type="text" required>
+                    </td>
+                </tr>        
+                <!-- Name -->
+                <tr style="border-collapse:collapse">
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"> <input id="Name" type="checkbox" required> </td>    
+                    <td style="border: 1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:1200px; font-family:Arial; font-size:13px;">
+                        <strong style="color:orangered">* </strong>
+                        <strong>1. Name</strong>
+                    </td>
+                </tr>
+                <!-- Title for Name -->
+                <tr style="border-collapse:collapse">
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:1200px; font-family:Arial; font-size:13px;">
+                        <b>Title</b>
+                        <label for="Shri/Mr" style="font-family:Arial; font-size:13px; margin-left:15px;">Shri/Mr</label>
+                        <input id="Shri/Mr" type="radio" name="Title" value="Mr" required>
+                        <label for="Smt./Mrs" style="font-family:Arial; font-size:13px; margin-left:15px">Smt./Mrs</label>
+                        <input id="Smt./Mrs" type="radio" name="Title" value="Mrs" required>
+                        <label for="Kumari/Ms" style="font-family:Arial; font-size:13px; margin-left:15px;">Kumari/Ms</label>
+                        <input id="Kumari/Ms" type="radio" name="Title" value="Ms" required>
+                        <label for="M/s" style="font-family:Arial; font-size:13px; margin-left:15px; color:darkgray;">M/s</label> 
+                    </td>
+                </tr>
+                <!-- LastName, First Name, Middle Name -->
+                <tr style="border-collapse:collapse">
+                    <td style="border:1px solid rgb(89, 89, 89); height: 15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height: 15px; border-collapse:collapse; width:1200px; font-family:Arial; font-size:13px; padding-bottom:0%; padding-left:0%">
+                        <label for="LastName"><b>Last Name/Surname</b></label>
+                        <label for="First Name" style="margin-left:290px;"><b>First Name</b></label>
+                        <label for="Middle Name" style="margin-left:360px;"><b>Middle Name</b></label><br>
+                        <input style="margin-bottom:1px;" id="LastName" type="text" size="15">
+                        <input id="First Name" type="text" size="15" style="margin-left:274px;margin-bottom:1px;">
+                        <input id="Middle Name" type="text" size="15" style="margin-left:284px;margin-bottom:1px;">
+                    </td>
+                </tr>
+                <!--  -->
+                <tr style="border-collapse:collapse">
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:1200px; font-family:Arial; font-size:13px; color:blue">
+                        <strong style="color:orangered">* </strong>
+                        <strong style="color:black">Name as you would like it printed on the card</strong>
+                        (Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed)
+                    </td>
+                </tr>
+                <!--  -->
+                <tr style="border-collapse:collapse">
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:1200px; padding-bottom:0%; padding-left:0%; padding-top:0%;">
+                        <input id="Middle Name" type="text" size="40">
+                    </td>
+                </tr>
+                <!--  -->
+                <tr style="border-collapse:collapse">
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:1200px; font-family:Arial; font-size:13px; color:blue; padding-left:0%;">
+                        <strong style="color:black">Details of Parents. </strong>
+                        (Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed)
+                    </td>
+                </tr>
+            </table>
+
+            <!--  -->
+
+            <table style="width: 100%; border-collapse:collapse;margin-top: 0%;margin-top: -3px;padding: 0%; margin-bottom: 0px;">
+                <tr style="border-collapse:collapse; margin-top:0%">
+                            <th></th>
+                            <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; column-width: 700px; padding-right:0%;margin-right:-10px;">
+                        <strong style="color:black; margin-right: -10px;">Whether mother is single parent and you wish to apply for PAN by furnishing the name of</strong><br>
+                        <strong style="color:black;padding-left: 0%;">your mother only</strong>
+                     </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; column-width:1500px; border-left-width:1px;" colspan="2">
+                        <label for="SingleParent-Yes" style="font-family:Arial; font-size:13px; margin-left:0px;">Yes</label>
+                        <input id="SingleParent-Yes" type="radio" name="SingleParent" value="Yes" required>
+                        <label for="SingleParent-No" style="font-family:Arial; font-size:13px; ">No</label>
+                        <input id="SingleParent-No" type="radio" name="SingleParent" value="No" required>
+                     </td>
+                </tr>
+            </table>
+
+            <!--  -->
+            <table style="border-collapse:collapse;margin-top: -1px;padding: 0%; border:1px rgb(89, 89, 89);">
+                <tr style="border-collapse:collapse">
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"><input id="Father'sName" type="checkbox" required></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse;  width:1270px; font-family:Arial; font-size:13px; color:blue; padding-left:0%;">
+                        <strong style="color:orangered">*</strong><strong style="color:black;">Father's Name</strong>(Mandatory field. Even married women should give father's name only.)
+                    </td>
+                    </td>
+                </tr>
+                <!--  -->
+                <tr style="border-collapse:collapse">
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse;  width:1270px; font-family:Arial; font-size:13px; padding-bottom:0%; padding-left:0%;">
+                        <label for="LastName"><b>Last Name/Surname</b></label>
+                        <label for="First Name" style="margin-left:290px;"><b>First Name</b></label>
+                        <label for="Middle Name" style="margin-left:360px;"><b>Middle Name</b></label><br>
+                        <input id="LastName" type="text" size="15">
+                        <input id="First Name" type="text" size="15" style="margin-left:274px;">
+                        <input id="Middle Name" type="text" size="15" style="margin-left:284px;">
+                    </td>
+                </tr>
+                <!--  -->
+                <tr style="border-collapse:collapse">
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"><input id="Mother'sName" type="checkbox"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse;  width:1270px; font-family:Arial; font-size:13px; color:blue; padding-left:0%;">Mother's Name(This field is optional.)</td>
+                </tr>
+                <tr style="border-collapse:collapse">
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse;  width:1270px; font-family:Arial; font-size:13px; padding-bottom:0%; padding-left:0%;">
+                        <label for="LastName"><b>Last Name/Surname</b></label>
+                        <label for="First Name" style="margin-left:290px;"><b>First Name</b></label>
+                        <label for="Middle Name" style="margin-left:360px;"><b>Middle Name</b></label><br>
+                        <input id="LastName" type="text" size="15">
+                        <input id="First Name" type="text" size="15" style="margin-left:274px;">
+                        <input id="Middle Name" type="text" size="15" style="margin-left:284px;">
+                    </td>
+                </tr>
+            </table>
+
+            <table style="border-collapse:collapse; margin-top:10px; margin-top:-3px;padding: 0%; margin-bottom: 0px; width:100%;">
+                <tr style="border-collapse:collapse; margin-top:0%">
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                </tr>
+                <!--  -->
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; font-family:Arial; font-size:13px; color:blue; padding-left:0%;">
+                        <strong style="color:orangered">*</strong><strong style="color:black;">4. Select Parent name which is to be printed on the card</strong><br>(In case no option is provided then PAN card will be issued with father's name)
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:727px;">
+                        <label for="Father Name" style="font-family:Arial; font-size:13px; margin-left:-1px;">Father Name</label>
+                        <input id="Father Name" type="radio" name="ParentName" value="FatherName" required>
+                        <label for="Mother Name" style="font-family:Arial; font-size:13px; margin-left:15px;">Mother Name</label>
+                        <input id="Mother Name" type="radio" name="ParentName" value="MotherName" required>
+                     </td>
+                </tr>
+                <!--  -->
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"><input style="margin-top:-1px;" id="DOB" type="checkbox"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong style="color:orangered">*</strong><strong style="color:black;"> 5. Date of Birth/Incorporation/Agreement/Partnership<br>or Trust Deed/Formation of Body of Individuals/<br>Association of Persons</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <label for="Date" style="margin-left:-1px; font-family:Arial; font-size:13px;">DD</label>
+                        <label for="Month" style="margin-left:-1px; font-family:Arial; font-size:13px; margin-left:22px;">MM</label>
+                        <label for="Year" style="margin-left:-1px; font-family:Arial; font-size:13px; margin-left:22px;">YYYY</label><br>
+                        <select><option value="0">DD</option></select>
+                        <select style="margin-left:-4px;"><option value="0">MM</option></select>
+                        <input id="Year" type="text" size="4" style="margin-left:-4px;">
+                     </td>
+                </tr>
+                <!--  -->
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"><input style="margin-top:-1px;" id="Gender" type="checkbox"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong style="color:orangered">*</strong><strong style="color:black;">6. Gender</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <label for="Male" style="font-family:Arial; font-size:13px; margin-left:-1px;">Male</label>
+                        <input id="Male" type="radio" name="Gender" value="Male" required>
+                        <label for="Female" style="font-family:Arial; font-size:13px; margin-left:15px;">Female</label>
+                        <input id="Female" type="radio" name="Gender" value="Female" required>
+                        <label for="TransGender" style="font-family:Arial; font-size:13px; margin-left:15px;">TransGender</label>
+                        <input id="TransGender" type="radio" name="Gender" value="TransGender" required>
+                     </td>
+                     <td style="border:1px solid rgb(89, 89, 89);""></td>
+                </tr>
+                <!--  -->
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"><input style="margin-top:-1px;" id="PhotoMismatch" type="checkbox"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; padding-left:0%;" colspan="2">
+                        <strong style="margin-left:7px;">7. Photo Mismatch</strong>
+                    </td>
+                </tr>
+                <!--  -->
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"><input style="margin-top:-1px;" id="SignMismatch" type="checkbox"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; padding-left:0%;" colspan="2">
+                        <strong style="margin-left:7px;">8. Signature Mismatch</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"><input style="margin-top:-1px;" id="AOC" type="checkbox"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong style="color:orangered">*</strong><strong style="color:black;"> 9. Address for Communication</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <label for="Residential" style="font-family:Arial; font-size:13px; margin-left:-1px;">Residential</label>
+                        <input id="Residential" type="radio" name="AOC" value="Residential" required>
+                        <label for="Office" style="font-family:Arial; font-size:13px; margin-left:15px;">Office</label>
+                        <input id="Office" type="radio" name="AOC" value="Office" required>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong>Office Name</strong><i> (to be filled only in case of office address)</i>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <input id="Office Name" style="margin-left:-1px; margin-top:-1px; margin-bottom:-1px;" size="30" id="Residential" type="text" name="Office Name"required>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong>Flat/Door/Block No.</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <input id="Door Number" style="margin-left:-1px; margin-top:-1px; margin-bottom:-1px;" size="25" id="Residential" type="text" name="Door Number"required>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong>Name of Premises/Building/Village</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <input id="Name of Premises/Building/Village" style="margin-left:-1px; margin-top:-1px; margin-bottom:-1px;" size="25" id="Residential" type="text" name="Name of Premises/Building/Village"required>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong>Road/Street/Lane/Post Office</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <input id="Road/Street/Lane/Post Office" style="margin-left:-1px; margin-top:-1px; margin-bottom:-1px;" size="25" id="Residential" type="text" name="Road/Street/Lane/Post Office"required>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong>Area/Locality/Taluka/Sub-Division</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <input id="Area/Locality/Taluka/Sub-Division" style="margin-left:-1px; margin-top:-1px; margin-bottom:-1px;" size="25" id="Residential" type="text" name="Area/Locality/Taluka/Sub-Division"required>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong>Town/City/District</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <input id="Town/City/District" style="margin-left:-1px; margin-top:-1px; margin-bottom:-1px;" size="25" id="Residential" type="text" name="Town/City/District"required>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong>State/Union Territory</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <select style="max-height:22px; height:21px; margin-left:-1px; margin-top:-10px; margin-bottom:-5px; max-width:500px; width:190px;"><option value="0">--Please Select --</option></select>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong>PIN</strong><i> (Indicating PIN is mandatory)</i>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <input style="margin-left:-1px; margin-top:-1px; margin-bottom:-1px;" size="6" id="Residential" type="text" name="PIN"required>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong>Country</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <select style="max-height:22px; height:21px; margin-left:-1px; margin-top:-10px; margin-bottom:-5px; max-width:500px; width:390px;" disabled><option value="0">--Please Select --</option></select>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong>Zip</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <input style="margin-left:-1px; margin-top:-1px; margin-bottom:-1px;" size="6" id="Zip" type="text" name="ZIP" disabled>
+                     </td>
+                </tr>
+                <!--  -->
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"><input style="margin-top:-1px;" id="SignMismatch" type="checkbox"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; padding-left:0%;" colspan="2">
+                        <strong style="margin-left:-1px;">10. If you desire to update your other address, give required details & <u>Submit proof of other address also</u>.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px; border-bottom-width:0px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%; border-bottom-width:0px;">
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:3px; width:728px; border-bottom-width:0px; border-top-width:3px; border-right-width:3px; border-left-width:3px;">
+                        <label for="Year" style="margin-left:-1px; font-family:Arial; font-size:13px;">Country code (ISD code)</label><br>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px; border-bottom-width:0px; border-top-width:0px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%; border-bottom-width:0px; border-top-width:0px;">
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:3px; width:728px; border-right-width:3px; border-left-width:3px; border-top-width:0px">
+                        <select style="max-height:22px; height:21px; margin-left:-1px; margin-top:-10px; margin-bottom:0px; max-width:500px; width:450px;"><option value="0">--Please Select --</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px; border-bottom-width:0px; border-top-width:0px;"><input style="margin-top:-1px;" id="SignMismatch" type="checkbox" required></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%; border-bottom-width:0px; border-top-width:0px;">
+                        <strong style="color:orangered">*</strong><strong style="color:black;"> 11. Telephone No.</strong><br>(Country code is compulsory)
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px; border-right-width:3px; border-left-width:3px;">
+                        <input id="Mobile" type="radio" name="phone" value="Mobile" required>
+                        <label for="Mobile" style="font-family:Arial; font-size:13px; margin-left:-1px;">Mobile No.</label>
+                        <input style="margin-left:360px;" id="Telephone" type="radio" name="phone" value=" Telephone" required>
+                        <label for="Telephone" style="font-family:Arial; font-size:13px;">Telephone No.</label>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px; border-bottom-width:0px; border-top-width:0px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%; border-bottom-width:0px; border-top-width:0px;">
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px;width:728px; border-right-width:3px; border-left-width:3px; border-bottom-width:0px;">
+                        <label for="PhoneCode" style="font-family:Arial; font-size:13px; margin-left:-1px;">Area/STD Code</label>
+                        <label for="PhoneNumber" style="font-family:Arial; font-size:13px; margin-left:360px;">Telephone No./Mobile No.</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px; border-top-width:0px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%; border-top-width:0px;">
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px; border-right-width:3px; border-left-width:3px; border-bottom-width:3px;  border-top-width:0px;">
+                        <input size="10" id="PhoneCode" type="text" name="PhoneCode" required>
+                        <input  size="13" style="margin-left:348px;" id="PhoneNumber" type="text" name="PhoneNumber" required>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong>E-mail ID</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <input id="EmailID" style="margin-left:-1px; margin-top:-1px; margin-bottom:-1px;" size="40" id="Residential" type="mail" name="Office Name"required>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        In case of a citizen of India, then
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px;">
+                        <input id="AADHAAR" type="radio" name="Proof" value="AADHAAR" required>
+                        <label for="AADHAAR" style="font-family:Arial; font-size:13px;" text-align="left">AADHAAR</label>
+                        <input style="margin-left:10px;" id="EID" type="radio" name="Proof" value="EID" required>
+                        <label for="EID" style="font-family:Arial; font-size:13px;">EID</label>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"><input style="margin-top:-1px;" id="AAdharID" type="checkbox" required></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <strong style="color:orangered">*</strong><strong style="color:black;"> 12. AADHAAR number :</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px; border-top-width:0px; font-family:Arial; font-size:12px; color:midnightblue; margin-top:-4px; margin-bottom:-2px;" colspan="2">
+                        <input style="margin-top:-1px; margin-left:-1px; font-family:Arial; font-size:13px; color:black" size="10" id="AAdharNumber" type="text" name="AAdharNumber" required><br>
+                        <i><strong>In case AADHAAR number is provided,</strong></i><br>
+                        <i><strong>then proof of AADHAAR along with supporting documents is to be submitted to NSDL</strong></i> 
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:12px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <p style="margin-top:-1px; margin-bottom:0px;"><strong style="color:orangered;">*</strong>Name as per AADHAAR letter<br>or<br>as per the enrollment ID of Aadhaar application form</p>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px; border-top-width:0px; font-family:Arial; font-size:12px; color:midnightblue; margin-top:-4px; margin-bottom:-2px;" colspan="2">
+                        <input style="margin-top:-1px; margin-left:-1px; font-family:Arial; font-size:13px; color:black" size="100" id="AAdharNumber" type="text" name="AAdharNumber" required><br>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px; border-top-width:3px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%; border-top-width:3px;">
+                        <strong>13. GSTN</strong>
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px; border-top-width:3px;">
+                        <input style="margin-top:-1px; margin-left:-1px; font-family:Arial; font-size:13px; color:black" size="10" id="GSTN" type="text" name="GST" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"><input style="margin-top:-1px;" id="OtherPAN" type="checkbox"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; padding-left:0%;" colspan="2">
+                        <strong style="margin-left:-1px;">14. Mention other Permanent Account Numbers (PANs) if any,inadvertently allotted to you.<u>Submit proof of surrendered PAN(s) along with the application.</u>.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;">
+                        <label for="PAN1"><strong>PAN1</strong></label>
+                        <input ID="PAN1" style="margin-top:-1px; margin-left:-1px; font-family:Arial; font-size:13px; color:black" type="text" name="PAN1">
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px; font-family:Arial; font-size:13px">
+                        <label for="PAN2"><strong>PAN2</strong></label>
+                        <input ID="PAN2" style="margin-top:-1px; margin-left:-1px; font-family:Arial; font-size:13px; color:black" type="text" name="PAN2">
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;  font-family:Arial; font-size:13px">
+                        <label for="PAN3"><strong>PAN3</strong></label>
+                        <input ID="PAN3" style="margin-top:-1px; margin-left:-1px; font-family:Arial; font-size:13px; color:black" type="text" name="PAN3">
+                    </td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; border-left-width:1px; width:728px; font-family:Arial; font-size:13px">
+                        <label for="PAN4"><strong>PAN4</strong></label>
+                        <input ID="PAN4" style="margin-top:-1px; margin-left:-1px; font-family:Arial; font-size:13px; color:black" type="text" name="PAN4">
+                     </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; padding-left:0%;" colspan="2">
+                        <strong style="margin-left:-1px;">15. Verification</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; padding-left:0%;" colspan="2">
+                        I/We <input style="margin-top:-1px; margin-left:-1px; font-family:Arial; font-size:13px; color:black" size="70" id="Name" type="text" name="Name" required>,the applicant,in the capacity of <select style="max-height:22px; height:21px; margin-left:0px; margin-top:-10px; margin-bottom:-5px; max-width:500px; width:190px;"><option value="0">--Please Select --</option></select> do hereby declare that what is stated above is true to the<br>
+                        best of my information and belief.<br>
+                        I have enclosed  <input id="DocumentCount" type="text" size="2" style="margin-left:0px;">  (number of documents) in support of proposed changes/corrections.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; width:540px; padding-left:0%;" colspan="3">
+                        Place <input id="Office Name" style="margin-left:0px; margin-top:0px; margin-bottom:0px;" size="30" id="Place" type="text" name="Place"required>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; margin-left:20px; width:540px; padding-left:0%;" colspan="2">
+                        <label style="margin-left:104px;">DD MM YYYY</label><br>Verified today, the 31-08-2020
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; padding-left:0%;" colspan="2">
+                        I/We have enclosed <select style="max-height:22px; height:21px; margin-left:10px; margin-top:0px; margin-bottom:0px; max-width:4000px; width:1130px;"><option value="0">--Please Select --</option></select><br>
+                        as proof of identity, <select style="max-height:22px; height:21px; margin-left:1px; margin-top:0px; margin-bottom:0px; max-width:4000px; width:930px;"><option value="0">--Please Select --</option></select>as proof of address,<br>
+                        <select style="max-height:22px; height:21px; margin-left:-1px; margin-top:0px; margin-bottom:0px; max-width:4000px; width:1060px;"><option value="0">--Please Select --</option></select>as proof of date of birth and<br>
+                        <select style="max-height:22px; height:21px; margin-left:-1px; margin-top:0px; margin-bottom:-1px; max-width:500px; width:190px;"><option value="0">--Please Select --</option></select> as proof of PAN allotted.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; margin-left:20px; width:540px; padding-left:0%; border-right-width:0px;" colspan="2">
+                        <strong>Whether you wish to have?</strong> <label style="margin-left:104px;">
+                        <input id="Physical PAN Card & e-PAN Card" style="margin-bottom:-2px; margin-left:-70px;" value="Physical PAN Card & e-PAN Card" name="PANCardType" type="radio">
+                        <label for="Physical PAN Card & e-PAN Card">Physical PAN Card & e-PAN Card</label>
+                        <input id="Only e-PAN Card " style="margin-bottom:-2px; margin-left:30px;" value="e-PAN Card" name="PANCardType" type="radio">
+                        <label for="Only e-PAN Card ">Only e-PAN Card </label>
+                        <strong style="margin-left:25px;"><u><i>Fees Applicable</i></u></strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; margin-left:20px; width:540px; padding-left:0%;" colspan="2">
+                        <strong>Other Details</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; margin-left:20px; width:540px; padding-left:0%;" colspan="2">
+                        <strong>1. Depository Account Details</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; margin-left:20px; width:540px; padding-left:0%;" colspan="2">
+                        <label for="DP ID"><strong>DP ID:</strong></label>
+                        <input size="10" id="DP ID" style="margin-bottom:0px; margin-left:0px;" name="ID" type="text">
+                        <label style="margin-left:5px;" for="Client ID"><strong>Client ID</strong></label>
+                        <input size="10" id="Client ID" style="margin-bottom:-1px; margin-left:0px;" name="ID" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; margin-left:20px; width:540px; padding-left:0%;" colspan="2">
+                        <strong>2. Payment Details</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; width:35px;"><input style="margin-bottom:-2px;" id="PaymentMethod" type="radio"></td>
+                    <td style="border:1px solid rgb(89, 89, 89); height:15px; border-collapse:collapse; font-family:Arial; font-size:13px; padding-right:0%; margin-right:-200px; margin-left:20px; width:540px; padding-left:0%;" colspan="2">
+                        <strong>Online Payment</strong>
+                    </td>
+                </tr>
+            </table>
+            For Paperless PAN Application    
+            <input id="Paperless-Yes" type="radio" name="PaperlessPAN" value="Yes" required>
+            <label for="Paperless-Yes" style="font-size:15px; margin-left:0px;">Yes</label>
+            <input id="Paperless-No" type="radio" name="PaperlessPAN" value="No" required>
+            <label for="Paperless-No" style="font-size:15px; ">No</label><br>
+            <input id="DSCType" type="radio" name="DSCApply" value="Yes" required>
+            <label id="DSCType" style="font-size:13px; font-family:Arial;">DSC</label>
+            <select style="max-height:22px; height:21px; margin-left:-1px; margin-top:0px; margin-bottom:0px; max-width:500px; width:220px;"><option value="0">--Select --</option></select>
+            <a style="font-size:13px; font-family:Arial; color:rgb(100, 50, 4); margin-left:5px;" href="https://tin.tin.nsdl.com/pan/InstructionDSC.html" target="_blank">Guidelines for DSC user</a><br>
+            <label style="font-size:14px; font-family:Arial;" for="myPhoto">Upload Photo</label>
+            <input style="margin-left:940px;" type="file" id="myPhoto" name="myPhoto">
+            <label style="font-size:14px; font-family:Arial;" for="mySign">Upload Signature</label>
+            <input style="margin-left:70px;" type="file" id="mySign" name="mySign"><br>
+            <label style="font-size:14px; font-family:Arial;" for="myDoc">Upload Document</label>
+            <input style="margin-left:913px;" type="file" id="myDoc" name="myDoc">
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <small style="font-size:14px; font-family:Arial;">OR</small><br>
+            <img src="https://drive.google.com/drive/recent/digilocker.png"><br>
+            <label style="font-size:13px; font-family:Arial;" for="UploadPhoto">ALREADY UPLOADED PHOTO:</label>
+            <input size="30" style="margin-left:853px;" type="text" id="UploadPhoto" name="UploadPhoto"><br>
+            <label style="font-size:13px; font-family:Arial;" for="UploadSignature">ALREADY UPLOADED SIGNATURE:</label>
+            <input style="margin-left:824px; margin-top:7px;" type="text" id="UploadDocument" name="UploadDocument"><br>
+            <label style="font-size:13px; font-family:Arial;" for="UploadDocument">ALREADY UPLOADED DOCUMENTS:</label>
+            <textarea style="margin-left:815px; margin-top:4px;" id="UploadDocument" name="UploadDocument" rows="8" cols="38"></textarea><br>
+            <input style="margin-left:1224px;" type="submit">
+        </form>  
+        <hr>
+    </body>
+</html>
