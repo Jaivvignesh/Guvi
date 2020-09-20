@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+            var name = 0, address1 = 0, address2 = 0, city = 0, state = 0, pincode = 0; pincodeAuth = 1, mail = 0, mailAuth = 1, phone = 0, phoneAuth = 1;
+
+            name = document.getElementById("myname").value;
+            address1 = document.getElementById("myaddress1").value;
+            address2 = document.getElementById("myaddress2").value;
+            city = document.getElementById("mycity").value;
+            state = document.getElementById("mystate").value;
+
+            pincode = document.getElementById("mypincode").value;
+            if (pincode.length == 6) {
+                for (let loopiterator = 0; loopiterator < pincode.length; loopiterator++) {
+                    if ((pincode.charCodeAt(loopiterator) >= 48) && (pincode.charCodeAt(loopiterator) <= 57))
+                        continue;
+                    else {
+                        pincodeAuth = 0;
+                        break;
+                    }
+                }
+            }
+            else
+                pincodeAuth = 0
+
+            mail = document.getElementById("mymail").value;
+            for (var loopiterator = 0; loopiterator < mail.length; loopiterator++) {
+                if(mail[loopiterator] == '@')
+                    break;
+            }
+            if(loopiterator == mail.length)
+                mailAuth = 0;
+
+            phone = document.getElementById("myphone").value;
+            if (phone.length == 10) {
+                for (let loopiterator = 0; loopiterator < pincode.length; loopiterator++) {
+                    if ((pincode.charCodeAt(loopiterator) >= 48) && (pincode.charCodeAt(loopiterator) <= 57))
+                        continue;
+                    else {
+                        phoneAuth = 0;
+                        break;
+                    }
+                }
+            }
+            else    
+                phoneAuth = 0;
+            
+            if (name.length && address1.length && address2.length && city.length && state.length && (pincodeAuth == 1) &&(mailAuth == 1) && (phoneAuth == 1))
+                alert("Thanks");
+            else {
+                if((!name.length) && (!address1.length) && (!address2.length) && (!city.length) && (!state.length) && (pincodeAuth == 0) &&(mailAuth == 0) && (phoneAuth == 0)){
+                    alert("Incomplete Form");
+                }
+                else{
+                    if (!pincodeAuth){
+                        alert("Incorrect Postal Code");
+                    } 
+                    else if(!mailAuth){
+                        alert("Incorrect Mail id");
+                    }  
+                    else if(!phoneAuth){
+                        alert("Incorrect Phone Number");
+                    } 
+                } 
+            }
+        }
+    </script>
+    <style>
+        .box {
+            background-color: rgb(204, 204, 204);
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 5px 0;
+
+        }
+
+        .box i {
+            color: rgb(38, 77, 115);
+        }
+
+        .box input {
+            outline: none;
+            border: none;
+            background: none;
+            font-family: monospace;
+            color: rgb(38, 77, 115);
+            margin: 0 12px;
+            float: right;
+        }
+
+        .box select {
+            outline: none;
+            border: none;
+            background: none;
+            font-family: monospace;
+            color: rgb(38, 77, 115);
+            margin: 0 10px;
+            float: center;
+        }
+
+
+        .box:hover {
+            background-color: lightcyan;
+        }
+
+        .rightandpad {
+            margin-right: -3px;
+            padding: 1px;
+        }
+
+        .name {
+            margin-left: 3px;
+        }
+
+        .city {
+            margin-left: 1px;
+        }
+
+        .state {
+            margin-left: 100px;
+        }
+
+        .postal {
+            margin-left: -1px;
+        }
+
+        .email {
+            margin-left: 5px;
+        }
+
+        .phone {
+            margin-left: 5px;
+        }
+
+        .state {
+            margin-left: 6px;
+        }
+
+        .buttonstyle {
+            margin-left:100px; 
+            font-family: 'Courier New', Courier, monospace; 
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body
+    style="font-family: 'Courier New', Courier, monospace; color: rgb(32, 64, 96); background-color: rgb(230, 230, 230);">
+    <div>
+        <form id="RegistrationForm" action="index.html">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <lable for="myname">Full Name</lable>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <i class="fa fa-user icon rightandpad name"></i>
+                                <input id="myname" type="text" placeholder="Full Name" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable for="myaddress1">Address Line 1</lable>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <i class="fa fa-address-book rightandpad"></i>
+                                <input id="myaddress1" type="text" placeholder="Address Line 1" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable for="myaddress2">Address Line 2</lable>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <i class="fa fa-address-book rightandpad"></i>
+                                <input id="myaddress2" type="text" placeholder="Address Line 2" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable for="mycity">City</lable>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <i class="fa fa-building rightandpad city"></i>
+                                <input id="mycity" type="text" placeholder="City" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mystate">State/Province/Region</label></td>
+                        <td>
+                            <div class="box">
+                                <i class="fa fa-map-marker rightandpad state"></i>
+                                <input id="mystate" type="text" placeholder="State/Province/Region" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mypincode">Postal Code/ZIP</label></td>
+                        <td>
+                            <div class="box">
+                                <i class="fa fa-envelope-open rightandpad postal"></i>
+                                <input id="mypincode" type="text" placeholder="Postal Code/ZIP" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mycountry">Country</label></td>
+                        <td>
+                            <div class="box">
+                                <i class="fa fa-map rightandpad"></i>
+                                <select id="mycountry" name="mycountry">
+                                    <option selected value="India">India</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="China">China</option>
+                                </select>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mymail">Email</label></td>
+                        <td>
+                            <div class="box">
+                                <i class="fa fa-user icon rightandpad email"></i>
+                                <input id="mymail" type="email" placeholder="Email" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="myphone">Phone Number</label></td>
+                        <td>
+                            <div class="box">
+                                <i class="fa fa-user icon rightandpad phone"></i>
+                                <input id="myphone" type="text" placeholder="Phone Number" required>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="buttonstyle"
+                type="submit" form="RegistrationForm" value="Submit" onclick="myFunction()">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
